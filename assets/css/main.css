@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --paris-daisy: #fff952;
+    --cobalt: #024bad;
+    --dandelion: #fcde67;
+    --maya-blue: #5bccf6;
+    --black-pearl: #030e12;
+    --off-white: #faf9f6;
+    --matte-black: #28282b;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--paris-daisy);
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: var(--dandelion);
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+  
+.content {
+    flex: 1 1 0;
+    padding: 5rem;
+}
