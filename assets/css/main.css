@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Poppins:wght@300&family=Spline+Sans+Mono&display=swap');
+
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Spline Sans Mono', monospace;
+*/
 
 :root {
     --paris-daisy: #fff952;
@@ -9,6 +16,11 @@
     --off-white: #faf9f6;
     --matte-black: #28282b;
     --grey: #919191;
+
+    --main-bg: var(--paris-daisy);
+    --secondary-bg: var(--dandelion);
+    --secondary-color: var(--cobalt);
+    --primary-text: var(--black-pearl);
 }
 
 * {
@@ -19,7 +31,7 @@
 }
 
 body {
-    background-color: var(--paris-daisy);
+    background-color: var(--main-bg);
 }
 
 ul li a {
@@ -29,7 +41,7 @@ ul li a {
 li, a, button {
     font-weight: 500;
     font-size: 20px;
-    color: var(--matte-black);
+    color: var(--black-pearl);
     text-decoration: none;
 }
 
@@ -38,7 +50,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color: var(--dandelion);
+    background-color: var(--secondary-bg);
 }
 
 button {
@@ -52,7 +64,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--cobalt);
+    background-color: var(--secondary-color);
     opacity: 0.75;
 }
 
@@ -65,7 +77,7 @@ button:hover {
 }
 
 .next-button {
-    color: var(--matte-black);
+    color: var(--primary-text);
     background-color: var(--off-white);
     border-radius: 10px;
 }
@@ -101,20 +113,20 @@ button:hover {
 }
 
 .content h2 {
-    color: var(--matte-black);
+    color: var(--primary-text);
     font-size: 2.5rem;
     margin-bottom: 1.1rem;
 }
 
 .content h4 {
-    color: var(--matte-black);
+    color: var(--primary-text);
     font-weight: normal;
     font-size: 1.75rem;
     margin-bottom: 1.1rem;
 }
 
 .content h6 {
-    color: var(--matte-black);
+    color: var(--primary-text);
     font-size: 0.85rem;
     margin-bottom: 1.1rem;
 }
@@ -129,7 +141,7 @@ button:hover {
 .content .primary-pagebreak {
     text-align: center;
     margin: auto;
-    color: var(--paris-daisy);
+    color: var(--main-bg);
 }
 
 .content .--center {
@@ -144,11 +156,11 @@ button:hover {
 
 .box-selectors {
     display: inline-block;
-    color: var(--matte-black);
+    color: var(--primary-text);
     margin: 20px;
     padding: 25px;
     width: 100%;
-    border: 7px solid var(--matte-black);
+    border: 7px solid var(--primary-text);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -163,15 +175,64 @@ button:hover {
 }
 
 .content .center--items .secondary-pagebreak {
-    color: var(--paris-daisy);
+    color: var(--main-bg);
 }
 
 .content p {
-    color: var(--matte-black);
+    color: var(--primary-text);
     font-size: 1.3rem;
+}
+
+.wrapper {
+    margin-top: 2%;
+}
+
+.wrapper h1 {
+    /* font-family: ; */
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+.team .team-member {
+    background-color: var(--off-white);
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 450px;
+    padding: 25px;
+    line-height: 25px;
+    position: relative;
+}
+
+.team .team-member h3 {
+    color: var(--primary-text);
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.team .team-member p.role {
+    color: var(--primary-text);
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.team .team-member .team-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    transform: translateX(30%);
 }
 
 .footer {
     text-align: center;
-    background-color: var(--dandelion);
+    background-color: var(--secondary-bg);
 }
